@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: rgb(18, 18, 62);
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure the navbar stays above other elements */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: orange;
+    font-size: 1.01rem;
+}
+
+.left {
+    font-size: 1.35rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Adjust layout on smaller screens */
+    margin: 120px 40px 40px; /* Add margin-top to prevent overlapping with navbar */
+}
+
+.firstSection div {
+    width: 30%;
+}
+
+.leftSection {
+    margin: 70px 0;
+    font-size: 2.2rem;
+}
+
+.rightSection img {
+    width: 100%; /* Set to 100% for responsiveness */
+    max-width: 500px; /* Set a max width to prevent image from getting too large */
+    margin: 100px 0;
+}
+
+span {
+    color: #ffa500;
+}
+
+#element {
+    color: #ffa500;
+}
+
+/* Second Section */
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto; /* Allow flexible height */
+    padding-bottom: 40px;
+}
+
+hr {
+    border: 0;
+    background: rgb(18, 18, 62);
+    height: 1.5px;
+    margin: 40px 84px;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Make items wrap on smaller screens */
+    margin-top: 20px;
+}
+
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+}
+
+.skill-icon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.skill-box {
+    width: 100%; /* Adjust width */
+    max-width: 400px;
+    height: auto; /* Allow flexible height */
+    background-color: rgb(18, 18, 62);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    background-color: rgb(30, 30, 100);
+}
+
+/* Footer */
+.foot, .footer {
+    background-color: rgb(18, 18, 62);
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    margin : 30px 0 0 0;
+    padding: 30px;
+    height: 140px; /* Let height be auto for responsive */
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Third Section */
+.thirdSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+}
+
+.thirdSection h2 {
+    font-size: 1.5rem;
+}
+
+.thirdSection h1 {
+    font-weight: lighter;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow image wrapping on small screens */
+}
+
+#certificate {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.cert1, .cert2, .cert3, .cert4, .cert5 {
+    height: auto;
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (min-width: 1024px) {
+    .firstSection div {
+        width: 30%;
+    }
+
+    .skills-container {
+        justify-content: space-between;
+    }
+
+    .skill-box {
+        width: 112%;
+        height: 400px;
+    }
+}
+
+/* Medium screens like tablets */
+@media screen and (max-width: 768px) {
+    .firstSection div {
+        width: 45%;
+    }
+
+    .leftSection {
+        font-size: 1.8rem;
+    }
+
+    .secondSection h1 {
+        font-size: 1.6rem;
+    }
+
+    .skill-box {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+/* Small screens like phones */
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 187px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .left {
+        font-size: 1.2rem;
+    }
+
+    .leftSection {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .thirdSection h2, .thirdSection h1 {
+        text-align: center;
+    }
+
+    .cert1, .cert2, .cert3, .cert4, .cert5 {
+        width: 100%;
+    }
+}

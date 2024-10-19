@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Aditya's Portfolio</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#secondSection">Skills</a></li>
+                    <li><a href="#fourthSection" >Certificate</a></li>
+                    <li><a href="https://github.com/adi8567" target="_blank">Projects</a></li>
+                    <li><a href="contact.html" target="_blank">Contact Me</a></li>
+                    <li><a href="#thirdSection">Experience</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="firstSection" class="firstSection">
+            <div class="leftSection">
+                Hi , My name is <span>Aditya</span><br>
+                and I am a passionate <span id="element"></span>
+            </div>
+            <span id="element"></span>
+            <div class="rightSection">
+                <img src="dev.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="secondSection" class="secondSection">
+            <span class="text-gray">What all do I know?</span>
+            <h1>My Skills</h1>
+
+            <!-- Skill Icons and Boxes -->
+            <div class="skills-container">
+                <!-- HTML Skill -->
+                <div class="skill-icon">
+                    <img src="html.png" alt="HTML Icon">
+                    <div class="skill-box">
+                        <h3>HTML</h3>
+                        <p>Experienced in creating structured and semantic HTML for modern web development.</p>
+                    </div>
+                </div>
+
+                <!-- CSS Skill -->
+                <div class="skill-icon">
+                    <img src="https://static-00.iconduck.com/assets.00/css-3-icon-726x1024-610441pl.png" alt="CSS Icon">
+                    <div class="skill-box">
+                        <h3>CSS</h3>
+                        <p>Skilled in creating responsive and visually appealing designs using CSS and frameworks.</p>
+                    </div>
+                </div>
+
+                <!-- JavaScript Skill -->
+                <div class="skill-icon">
+                    <img src="js1.png" alt="JavaScript Icon">
+                    <div class="skill-box">
+                        <h3>JavaScript</h3>
+                        <p>Proficient in developing dynamic and interactive web applications using JavaScript.</p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="thirdSection" class="thirdSection">
+            <!-- My experience-->
+        </div class="experience">
+        <h1>My Experiences and Education :</h1>
+        <br>
+        <h3>1) Member of Technical Team in DSA <br>
+            2) Member of IEI Membership (from 2023)<br>
+            3) Studied from Delhi Public School,Faridabad,Haryana (2008-2022)<br>
+            4) SRM University (2023-2027)
+        </h3>
+
+    <hr>
+    <section id="fourthSection" class="fourthSection"> <h1>My Certificates : </h1>
+    <br>
+        <section id = "certificate">
+                <div>
+                    <img class="cert1" src="AWS Certificate_page-0001.jpg" alt="">
+                </div>
+            
+                <div>
+                    <img class="cert2" src="Cherry + figma certificate.jpg" alt="">
+                </div>
+            
+                <div>
+                    <img class="cert3" src="Python Certificate_page-0001.jpg" alt="">
+                </div>
+            
+                <div>
+                    <img class="cert4" src="web dev.jpg" alt="">
+                </div>
+
+                <div>
+                    <img class="cert5" src="Codenex.jpg" alt="">
+                </div>
+                </section>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Aditya's Portfolio.<br> All rights reserved.</p>
+                <p>Connect with me on <a href="https://github.com/adi8567" target="_blank">GitHub</a> or <a href="contact.html" target="_blank">Contact Me</a></p>
+            </div>
+        </footer>
+        
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>"Frontend Web Developer"</i>.',],
+            typeSpeed: 45,
+        });
+    </script>
+</body>
+</html>
