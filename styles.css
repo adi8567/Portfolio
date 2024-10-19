@@ -249,7 +249,7 @@ hr {
 
 /* Small screens like phones */
 @media screen and (max-width: 768px) {
-    nav ul {
+    .nav ul {
         padding-top: 106px;
         display: inline-block;
         justify-content: center;
@@ -287,10 +287,10 @@ hr {
     }
 }
 
-.feedback {
+#feedback {
     align-items: center;
     padding: 20px;
-    display:block;
+    display:block
 }
 
 #feedbackForm {
