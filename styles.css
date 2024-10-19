@@ -17,17 +17,18 @@ body {
     display: flex;
     flex-direction: column;
 }
+  nav {
+        background-color: rgb(18, 18, 62);
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+        position: fixed; /* Ensure the navbar is always at the top */
+        top: 0;
+        z-index: 1000; /* Higher z-index to stay above other elements */
+    }
 
-nav {
-    background-color: rgb(18, 18, 62);
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    height: 80px;
-    width: 100%;
-    top: 0;
-    z-index: 1000; /* Ensure the navbar stays above other elements */
-}
 
 nav ul {
     display: flex;
@@ -42,6 +43,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    cursor: pointer; /* Add this */
 }
 
 nav ul li a:hover {
@@ -246,11 +248,11 @@ hr {
 }
 
 /* Small screens like phones */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        padding: 0;
-        padding-top: 187px;
+        padding-top: 106px;
+        display: inline-block;
+        justify-content: center;
     }
 
     nav ul li {
