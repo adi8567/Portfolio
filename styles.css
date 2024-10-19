@@ -24,7 +24,7 @@ body {
         align-items: center;
         height: 80px;
         width: 100%;
-        position: fixed; /* Ensure the navbar is always at the top */
+        /* Ensure the navbar is always at the top */
         top: 0;
         z-index: 1000; /* Higher z-index to stay above other elements */
     }
@@ -286,3 +286,39 @@ hr {
         width: 100%;
     }
 }
+
+.feedback {
+    align-items: center;
+    padding: 20px;
+    display:block;
+}
+
+#feedbackForm {
+    width: 100%;
+    max-width: 400px; /* Limit the width on larger screens */
+}
+
+#feedbackForm input , #feedbackForm textarea {
+    width: 100%;
+    margin-bottom: 15px; /* Add space between elements */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#feedbackForm button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#feedbackForm button:hover {
+    background-color: #218838;
+}
+
+
